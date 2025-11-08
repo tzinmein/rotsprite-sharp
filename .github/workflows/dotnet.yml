@@ -35,7 +35,7 @@ jobs:
           if [[ "${GITHUB_REF}" == refs/tags/* ]]; then
             VERSION=${GITHUB_REF#refs/tags/v}
           elif [[ "${GITHUB_REF_NAME}" == "master" ]]; then
-            VERSION="1.1.0-beta.${GITHUB_RUN_NUMBER}"
+            VERSION="1.0.0-beta.${GITHUB_RUN_NUMBER}"
           else
             VERSION="0.0.0-ci.${GITHUB_RUN_NUMBER}"
           fi
