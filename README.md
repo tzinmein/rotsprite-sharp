@@ -1,6 +1,8 @@
-# RotSpriteSharp (.NET port)
-
+[![Build & Publish NuGet](https://github.com/tzinmein/rotsprite-sharp/actions/workflows/dotnet.yml/badge.svg)](https://github.com/tzinmein/rotsprite-sharp/actions/workflows/dotnet.yml)
+[![NuGet Version](https://img.shields.io/nuget/v/RotSpriteSharp.svg?logo=nuget)](https://www.nuget.org/packages/RotSpriteSharp)
 [![License: AGPL-3.0-or-later](https://img.shields.io/badge/license-AGPL--3.0--or--later-blue.svg)](#license)
+
+# RotSpriteSharp (.NET port)
 
 This is a port of the [rotsprite-rs](https://github.com/tversteeg/rotsprite) Rust library, which implements the [RotSprite algorithm](https://en.wikipedia.org/wiki/Pixel-art_scaling_algorithms#RotSprite) for high-quality pixel art rotation. The port aims to faithfully reproduce the original algorithm and provide a demo for batch rotation and comparison. It supports all currently supported .NET LTS versions.
 
