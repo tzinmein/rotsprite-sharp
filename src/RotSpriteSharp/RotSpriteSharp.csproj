@@ -8,9 +8,12 @@
     <Description>High-quality pixel art rotation algorithm for .NET. Port of RotSprite (Rust).</Description>
     <PackageLicenseExpression>AGPL-3.0-or-later</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/tzinmein/RotSpriteSharp</RepositoryUrl>
+	  <RepositoryType>git</RepositoryType>
     <PackageProjectUrl>https://github.com/tzinmein/RotSpriteSharp</PackageProjectUrl>
     <PackageTags>pixel-art;rotation;sprites;graphics;rotsprite;dotnet</PackageTags>
     <PackageVersion>1.0.0</PackageVersion>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+	  <Copyright>Copyright $([System.DateTime]::Now.Year) Ho Tzin Mein</Copyright>
   </PropertyGroup>
 
 </Project>

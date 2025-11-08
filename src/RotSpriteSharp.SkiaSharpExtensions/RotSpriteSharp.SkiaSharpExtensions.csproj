@@ -9,9 +9,11 @@
     <Authors>Ho Tzin Mein</Authors>
     <Description>SkiaSharp extension methods for RotSpriteSharp pixel art rotation.</Description>
     <RepositoryUrl>https://github.com/tzinmein/RotSpriteSharp</RepositoryUrl>
+	  <RepositoryType>git</RepositoryType>
     <PackageProjectUrl>https://github.com/tzinmein/RotSpriteSharp</PackageProjectUrl>
     <PackageTags>pixel-art;rotation;sprites;graphics;rotsprite;dotnet;skiasharp</PackageTags>
-    <PackageVersion>1.0.0</PackageVersion>
+	  <PackageReadmeFile>README.md</PackageReadmeFile>
+	  <Copyright>Copyright $([System.DateTime]::Now.Year) Ho Tzin Mein</Copyright>
   </PropertyGroup>
 
   <ItemGroup>
