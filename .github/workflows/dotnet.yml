@@ -11,17 +11,14 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        dotnet-version: [8.0.x, 10.0.x]
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup .NET
+      - name: Setup .NET 10 SDK
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: ${{ matrix.dotnet-version }}
+          dotnet-version: 10.0.x
 
       - name: Restore dependencies
         run: dotnet restore
@@ -45,11 +42,14 @@ jobs:
           echo "Version set to $VERSION"
           echo "VERSION=$VERSION" >> $GITHUB_ENV
 
-      - name: Pack all projects
-        run: |
-          dotnet pack src/RotSpriteSharp/RotSpriteSharp.csproj -c Release -o ./artifacts /p:Version=$VERSION --no-build
-          dotnet pack src/RotSpriteSharp.SystemDrawingExtensions/RotSpriteSharp.SystemDrawingExtensions.csproj -c Release -o ./artifacts /p:Version=$VERSION --no-build
-          dotnet pack src/RotSpriteSharp.SkiaSharpExtensions/RotSpriteSharp.SkiaSharpExtensions.csproj -c Release -o ./artifacts /p:Version=$VERSION --no-build
+      - name: Pack RotSpriteSharp
+        run: dotnet pack src/RotSpriteSharp/RotSpriteSharp.csproj -c Release -o ./artifacts /p:Version=$VERSION --no-build
+
+      - name: Pack RotSpriteSharp.SystemDrawingExtensions
+        run: dotnet pack src/RotSpriteSharp.SystemDrawingExtensions/RotSpriteSharp.SystemDrawingExtensions.csproj -c Release -o ./artifacts /p:Version=$VERSION --no-build
+
+      - name: Pack RotSpriteSharp.SkiaSharpExtensions
+        run: dotnet pack src/RotSpriteSharp.SkiaSharpExtensions/RotSpriteSharp.SkiaSharpExtensions.csproj -c Release -o ./artifacts /p:Version=$VERSION --no-build
 
       - name: Upload NuGet packages
         uses: actions/upload-artifact@v4
@@ -64,7 +64,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup .NET
+      - name: Setup .NET 10 SDK
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: 10.0.x
