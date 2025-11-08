@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net10.0;net8.0</TargetFrameworks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>RotSpriteSharp.SystemDrawingExtensions</AssemblyName>
+    <PackageLicenseExpression>AGPL-3.0-or-later</PackageLicenseExpression>
+    <Authors>Ho Tzin Mein</Authors>
+    <Description>System.Drawing extension methods for RotSpriteSharp pixel art rotation (Windows only).</Description>
+    <RepositoryUrl>https://github.com/tzinmein/RotSpriteSharp</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/tzinmein/RotSpriteSharp</PackageProjectUrl>
+    <PackageTags>pixel-art;rotation;sprites;graphics;rotsprite;dotnet;system.drawing</PackageTags>
+    <PackageVersion>1.0.0</PackageVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RotSpriteSharp\RotSpriteSharp.csproj" />
+    <PackageReference Include="System.Drawing.Common" Version="9.0.10" />
+  </ItemGroup>
+
+</Project>

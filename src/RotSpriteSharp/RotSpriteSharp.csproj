@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net10.0;net8.0</TargetFrameworks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Authors>Ho Tzin Mein</Authors>
+    <Description>High-quality pixel art rotation algorithm for .NET. Port of RotSprite (Rust).</Description>
+    <PackageLicenseExpression>AGPL-3.0-or-later</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/tzinmein/RotSpriteSharp</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/tzinmein/RotSpriteSharp</PackageProjectUrl>
+    <PackageTags>pixel-art;rotation;sprites;graphics;rotsprite;dotnet</PackageTags>
+    <PackageVersion>1.0.0</PackageVersion>
+  </PropertyGroup>
+
+</Project>

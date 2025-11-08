@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworks>net8.0;net10.0</TargetFrameworks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Authors>Ho Tzin Mein</Authors>
+    <Description>Console demo for RotSpriteSharp pixel art rotation using SkiaSharp.</Description>
+    <RepositoryUrl>https://github.com/tzinmein/RotSpriteSharp</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="threeforms.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SkiaSharp" Version="3.119.1" />
+    <PackageReference Include="System.CommandLine" Version="2.0.0-rc.2.25502.107" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RotSpriteSharp.SkiaSharpExtensions\RotSpriteSharp.SkiaSharpExtensions.csproj" />
+    <ProjectReference Include="..\RotSpriteSharp\RotSpriteSharp.csproj" />
+  </ItemGroup>
+
+</Project>
