@@ -6,6 +6,8 @@
 
 This is a port of the [rotsprite-rs](https://github.com/tversteeg/rotsprite) Rust library, which implements the [RotSprite algorithm](https://en.wikipedia.org/wiki/Pixel-art_scaling_algorithms#RotSprite) for high-quality pixel art rotation. The port aims to faithfully reproduce the original algorithm and provide a demo for batch rotation and comparison. It supports all currently supported .NET LTS versions.
 
+**RotSpriteSharp is a stable library. Future updates will mainly address dependency upgrades, support for new .NET LTS releases, and occasional new extensions. The core algorithm is complete and production-ready.**
+
 ## .NET LTS Support Timetable
 
 | Version | Release Date | End of Support |
