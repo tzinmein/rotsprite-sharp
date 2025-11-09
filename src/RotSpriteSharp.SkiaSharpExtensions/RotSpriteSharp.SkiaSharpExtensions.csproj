@@ -12,7 +12,7 @@
 	  <RepositoryType>git</RepositoryType>
     <PackageProjectUrl>https://github.com/tzinmein/RotSpriteSharp</PackageProjectUrl>
     <PackageTags>pixel-art;rotation;sprites;graphics;rotsprite;dotnet;skiasharp</PackageTags>
-	  <PackageReadmeFile>../README.md</PackageReadmeFile>
+	  <PackageReadmeFile>README.md</PackageReadmeFile>
 	  <Copyright>Copyright $([System.DateTime]::Now.Year) Ho Tzin Mein</Copyright>
   </PropertyGroup>
 
